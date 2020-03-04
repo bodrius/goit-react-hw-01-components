@@ -1,0 +1,51 @@
+
+
+.avatar{
+    width: 150px;
+    height: auto;
+    border-radius: 50% 50%;
+}
+
+.profile{
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 5px 5px black;
+}
+
+.description{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.name{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.stats{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+
+.choise{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(201, 221, 226);
+}
+.quantity{
+    font-size: 18px;
+    font-weight: 600;
+    /* text-align: center; */
+}
