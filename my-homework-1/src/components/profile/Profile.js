@@ -1,8 +1,8 @@
 import React from "react";
 import css from "./profile.module.css";
-// import user from '../../user.json';
 
-const Profile = ({ user: { name, tag, location, avatar, stats } }) => {
+
+const Profile = ({ user: { name, tag, location, avatar, stats:{followers,views,likes} } }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -15,15 +15,15 @@ const Profile = ({ user: { name, tag, location, avatar, stats } }) => {
       <ul className={css.stats}>
         <li className={css.choise}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
+          <span className={css.quantity}>{followers}</span>
         </li>
         <li className={css.choise}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
+          <span className={css.quantity}>{views}</span>
         </li>
         <li className={css.choise}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
+          <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
